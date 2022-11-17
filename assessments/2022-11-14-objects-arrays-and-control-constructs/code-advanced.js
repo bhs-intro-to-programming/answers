@@ -43,8 +43,8 @@ const rule110 = (cells) => {
     const left = i === 0 ? 0 : cells[i - 1];
     const right = i === cells.length - 1 ? 0 : cells[i + 1];
 
-    const allZeros = (left === 0 && center === 0 && right === 0);
-    const oneAndSame = (left === 1 && center === right);
+    const allZeros = left === 0 && center === 0 && right === 0;
+    const oneAndSame = left === 1 && center === right;
 
     return allZeros || oneAndSame ? 0 : 1;
   });
