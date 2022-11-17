@@ -1,6 +1,7 @@
 // How I'd write these with the stuff I have taught the whole class, and not
-// using and shorthand form of functions. See code2.js for more concise
-// solutions using shortand function, the ?: operator, and Array methods.
+// using and shorthand form of functions. See code-advanced.js for more 
+// concise solutions using shortand function, the ?: operator, and Array
+// methods.
 
 const area = (rect) => {
   return rect.width * rect.height;
