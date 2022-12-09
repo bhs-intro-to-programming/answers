@@ -7,6 +7,7 @@
 - [2022-11-14 objects, arrays, and control constructs](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-11-14-objects-arrays-and-control-constructs/code.js) ([advanced version](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-11-14-objects-arrays-and-control-constructs/code-advanced.js))
 - [2022-11-29 numeric](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-11-29-numeric/code.js)
 - [2022-12-02 boolean](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-02-booleans/code.js)
+- [2022-12-05 strings](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-05-strings/code.js)
 
 # Assignments
 
