@@ -9,6 +9,7 @@
 - [2022-12-02 boolean](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-02-booleans/code.js)
 - [2022-12-05 strings](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-05-strings/code.js)
 - [2022-12-07 control constructs](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-07-control-constructs/code.js)
+- [2022-12-08 control constructs](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-08-control-constructs/code.js)
 
 # Assignments
 
