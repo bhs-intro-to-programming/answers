@@ -1,5 +1,9 @@
+const makeRow = () => {
+  return ['', '', ''];
+}
+
 const makeBoard = () => {
-  return [['', '', ''], ['', '', ''], ['', '', '']];
+  return [makeRow(), makeRow(), makeRow()];
 };
 
 const makeMove = (mark, row, column) => {
