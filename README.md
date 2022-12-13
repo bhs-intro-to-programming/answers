@@ -20,4 +20,4 @@
 - [Images challenge](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/images-challenge/code.js)
 - [Array functions](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/array-functions/code.js) ([advanced version](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/array-functions/code-advanced.js))
 - [String functions](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/string-functions/code.js)
-- [Object functions](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/object-functions/code.js) ([advanced version](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/object-functions/code-advanced.js))
+- [Object functions](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/object-functions/code.js) ([advanced version](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/object-functions/code-advanced.js)))
