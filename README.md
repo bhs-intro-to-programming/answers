@@ -10,7 +10,7 @@
 - [2022-12-05 strings](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-05-strings/code.js)
 - [2022-12-07 control constructs](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-07-control-constructs/code.js)
 - [2022-12-08 control constructs](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-08-control-constructs/code.js)
-- [2022-12-12 arrays and objects](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-12-arrays-and-objects/code.js) ([advanced version](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-12-arrays-and-objects/code-advanced.js)
+- [2022-12-12 arrays and objects](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-12-arrays-and-objects/code.js) ([advanced version](https://github.com/bhs-intro-to-programming/answers/blob/main/assessments/2022-12-12-arrays-and-objects/code-advanced.js))
 
 # Assignments
 
@@ -20,4 +20,4 @@
 - [Images challenge](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/images-challenge/code.js)
 - [Array functions](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/array-functions/code.js) ([advanced version](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/array-functions/code-advanced.js))
 - [String functions](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/string-functions/code.js)
-- [Object functions](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/object-functions/code.js) ([advanced version](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/object-functions/code-advanced.js)))
+- [Object functions](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/object-functions/code.js) ([advanced version](https://github.com/bhs-intro-to-programming/answers/blob/main/assignments/object-functions/code-advanced.js))
