@@ -60,49 +60,59 @@ const chocolatesPerPerson = (numC, numP) => { // half, needs Math.floor
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // extraChocolates - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#3
 
-const extraChocolates = (nChocolates, nPeople) => { // correct
+// correct
+const extraChocolates = (nChocolates, nPeople) => {
   return nChocolates % nPeople
 }
 
-const extraChocolates = (cho, people) => { // correct
+// correct
+const extraChocolates = (cho, people) => {
   return cho % people
 }
 
-const extraChocolates = (choc, ppl) => { // correct
+// correct
+const extraChocolates = (choc, ppl) => {
   return choc % ppl
 }
 
-const extraChocolates = (numC, numP) => { // correct
+// correct
+const extraChocolates = (numC, numP) => {
   return numC % numP;
 };
 
-const extrachocolates = (numberofchocolate, numberofpeople) => { // correct, let slide capitalization problem
+// correct, let slide capitalization problem
+const extrachocolates = (numberofchocolate, numberofpeople) => {
   return (numberofchocolate%numberofpeople)
 }
 
-const extraChocolates = (chocos,people) => { // zero
+// zero
+const extraChocolates = (chocos,people) => {
   return Math.floor (chocos/people)
 }
 
-const extraChocolates = (chocolate, people) => { // zero, though chocolate - (people * chocolatesPerPerson(chocolate, people)) would have worked.
+// zero, though chocolate - (people * chocolatesPerPerson(chocolate, people)) would have worked.
+const extraChocolates = (chocolate, people) => {
   return people - chocolate (chocolatesPerPerson(chocolate, people))
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // leftOut - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#4
 
-const leftOut = (nChocolates, nPeople) => { // correct
+// correct
+const leftOut = (nChocolates, nPeople) => {
   if (nChocolates < nPeople) {
     return nPeople - nChocolates
   } else {return 0}
 }
 
-const leftOut = (c, p) => { // correct
+// correct
+const leftOut = (c, p) => {
 if (c > p) return 0
 return p - c
 }
 
-const leftOut = (choc, ppl) => { // correct
+// correct
+const leftOut = (choc, ppl) => {
   if ((ppl - choc) < 0) {
     return 0
   } else if ((ppl - choc) > 0) {
@@ -110,117 +120,142 @@ const leftOut = (choc, ppl) => { // correct
   }
 }
 
-const leftOut = (chocolates, people) => { // zero
+// zero
+const leftOut = (chocolates, people) => {
   Math.floor(chocolates / people);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // probabilityAllHeads - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#5
 
-const probabilityAllHeads = (coinflipped) => { // correct
+// correct
+const probabilityAllHeads = (coinflipped) => {
   return 1 / (2**coinflipped)
 }
 
-const probabilityAllHeads = (flips) => { // correct
+// correct
+const probabilityAllHeads = (flips) => {
   return .5 ** flips
 }
 
-const probabilityAllHeads = (n) => { // correct
+// correct
+const probabilityAllHeads = (n) => {
   return (.5 ** n)
 }
 
-const probabilityAllHeads = (numberoftimescoinflipped) => { // zero
+// zero
+const probabilityAllHeads = (numberoftimescoinflipped) => {
   return numberoftimescoinflipped / 0.5
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // futureHour - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#6
 
-const futureHour = (current, future) => { // correct
+// correct
+const futureHour = (current, future) => {
   return (current + future) % 24
 }
 
-const futureHour = (current, eventTime) => { // correct
+// correct
+const futureHour = (current, eventTime) => {
   return (current + eventTime) % 24
 }
 
-const futureHour = (current, hours) => { // zero, needs %
+// zero, needs %
+const futureHour = (current, hours) => {
   return current + hours;
 };
 
-const futureHour = (currenthouron24hourclock, positivenumberofhoursinthefuture) => { // zero, needs %
+// zero, needs %
+const futureHour = (currenthouron24hourclock, positivenumberofhoursinthefuture) => {
   return currenthouron24hourclock + positivenumberofhoursinthefuture
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // presentsBudget - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#7
 
-const presentsBudget=(numOfFriends,avgPresentPrice)=>{ // correct
+// correct
+const presentsBudget=(numOfFriends,avgPresentPrice)=>{
   return (numOfFriends * avgPresentPrice)
 }
 
-const presentsBudget = (friend, price) => { // correct
+// correct
+const presentsBudget = (friend, price) => {
   return friend * price
 }
 
-const presentsBudget = (friends, presents) => { // correct
+// correct
+const presentsBudget = (friends, presents) => {
   return friends * presents
 }
 
-const presentsBudget = (nFriend, avPrice) => nFriend * avPrice // correct
+// correct
+const presentsBudget = (nFriend, avPrice) => nFriend * avPrice
 
-const presentsBudget = (friends, price) => { // correct
+// correct
+const presentsBudget = (friends, price) => {
   return friends * price;
 };
 
-const presentsBudget = (numberoffriendsyouarebuyingpresentsfor, theavgpriceyouplantobuy) => {  // zero, * not +
+// zero, * not +
+const presentsBudget = (numberoffriendsyouarebuyingpresentsfor, theavgpriceyouplantobuy) => {
   return numberoffriendsyouarebuyingpresentsfor + theavgpriceyouplantobuy
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // perPresent - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#8
 
-const perPresent = (budget, presents) => { // correct
+// correct
+const perPresent = (budget, presents) => {
   return budget / presents;
 };
 
-const perPresent = (total, n) => { // correct
+// correct
+const perPresent = (total, n) => {
   return total/n
 }
 
-const perPresent = (totalamountofmoney, presentyouneedtobuy) => { // correct
+// correct
+const perPresent = (totalamountofmoney, presentyouneedtobuy) => {
   return totalamountofmoney / presentyouneedtobuy
 }
 
-const perPresent = (friends, presents) => { // correct, though first variable name is not quite right
+// correct, though first variable name is not quite right
+const perPresent = (friends, presents) => {
   return friends / presents
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // wrapingCombos - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#9
 
-const wrapingCombos = (numberofkindsofwrappingpaper, numberofkindsofribbions, numberofkindsdecorativebows) => {  // correct
+// correct
+const wrapingCombos = (numberofkindsofwrappingpaper, numberofkindsofribbions, numberofkindsdecorativebows) => {
   return numberofkindsofwrappingpaper * numberofkindsofribbions * numberofkindsdecorativebows
 }
 
-const wrappingCombos = (p, b, r) => { // correct
+// correct
+const wrappingCombos = (p, b, r) => {
   return p *b * r
 }
 
-const wrappingCombos = (numPaper, numRibbons, numBows) => numPaper * numRibbons * numBows // correct
+// correct
+const wrappingCombos = (numPaper, numRibbons, numBows) => numPaper * numRibbons * numBows
 
-const wrapingCombos = (paper, ribbons, bows) => { // zero, needs * not +
+// zero, needs * not +
+const wrapingCombos = (paper, ribbons, bows) => {
   return paper + ribbons + bows;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // biggestNumber - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#10
 
-const biggestNumber = (digits) => { // correct
+// correct
+const biggestNumber = (digits) => {
   return 10 ** digits - 1
 }
 
-const biggestNumber = (digits) => { // half, clever idea! but sadly need to convert the string to a number at the end
+// half, clever idea! but sadly need to convert the string to a number at the end
+const biggestNumber = (digits) => {
   let nines = ''
   for (let i = 0; i < digits; i++) {
     nines = nines + '9'
@@ -228,106 +263,126 @@ const biggestNumber = (digits) => { // half, clever idea! but sadly need to conv
   return nines;
 }
 
-const biggestNumber = (numberofdigits) => { // zero, right operator but missing too much
+// zero, right operator but missing too much
+const biggestNumber = (numberofdigits) => {
   return numberofdigits**
 }
 
-const biggestNumber = (digits) => { // zero
+// zero
+const biggestNumber = (digits) => {
   return Math.floor(digits);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // itemsLeftOver - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#11
 
-const itemsLeftOver = (numP, numI) => { // correct
+// correct
+const itemsLeftOver = (numP, numI) => {
   return numI % numP;
 };
 
-const itemsLeftOver = (ppl, items) => { // half, only works if items is greater than the number of people and  less than twice the number of people
+// half, only works if items is greater than the number of people and  less than twice the number of people
+const itemsLeftOver = (ppl, items) => {
   return items - (items % ppl)
 }
 
-const itemsLeftOver = (numberofpeople, numberofitems) => { // zero
+// zero
+const itemsLeftOver = (numberofpeople, numberofitems) => {
   return numberofpeople / numberofitems
 }
-
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // areaOfCircle - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#12
 
-const areaOfCircle = (r) => Math.PI * (r ** 2) // correct
+// correct
+const areaOfCircle = (r) => Math.PI * (r ** 2)
 
-const areaOfCircle = (radius) => { // correct
+// correct
+const areaOfCircle = (radius) => {
   return Math.PI * radius ** 2;
 };
 
-const areaofCircle = (radiusofacircle) => { // zero, needs * and **
+// zero, needs * and **
+const areaofCircle = (radiusofacircle) => {
   return Math.PI (radiusofacircle)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // volumeOfCube - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#13
 
-const volumeOfCube = (a) => a ** 3  // correct
+// correct
+const volumeOfCube = (a) => a ** 3
 
-const volumeOfCube = (length) => { // correct
+// correct
+const volumeOfCube = (length) => {
   return length ** 3;
 };
 
-const volumeOfCube = (length) => { // correct
+// correct
+const volumeOfCube = (length) => {
   return length ** 3
 }
 
-const volumeOfCube=(lengthOfEdge)=>{ // zero
+// zero
+const volumeOfCube=(lengthOfEdge)=>{
   return (lengthOfEdge * 6)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // populationGrowth - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#14
 
-const populationGrowth = (num1, numDay) => numDay * num1  // correct
+// correct
+const populationGrowth = (num1, numDay) => numDay * num1
 
-const populationGrowth = (current, growth) => { // correct
+// correct
+const populationGrowth = (current, growth) => {
   return current * growth
 }
 
-const populationGrowthRate = (population, growth) => { // correct, let slide wrong function name.
+// correct, let slide wrong function name.
+const populationGrowthRate = (population, growth) => {
   return population * growth;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // earnedRunAverage - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#15
 
-const earnedRunAverage=(numEarnedRuns,numInningsPitched)=>{ // correct
+// correct
+const earnedRunAverage=(numEarnedRuns,numInningsPitched)=>{
   return (numEarnedRuns / numInningsPitched)*9
 }
 
-const earnedRunaverage = (eRuns, pIn) => { // correct
+// correct
+const earnedRunaverage = (eRuns, pIn) => {
   return (eRuns / pIn) * 9
 }
 
-const earnedRunAverage = (earnedRuns, innings) => { // correct
+// correct
+const earnedRunAverage = (earnedRuns, innings) => {
   return (earnedRuns / innings) * 9;
 };
 
-const earnedRunAverage = (earned, innings) => { // correct
+// correct
+const earnedRunAverage = (earned, innings) => {
   return (earned / innings) * 9
 }
-
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // valueOfJewels - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#16
 
-const valueOfJewels = (numD, numE, valD, valE) => (valE * numE) + (valD * numD) // correct
+// correct
+const valueOfJewels = (numD, numE, valD, valE) => (valE * numE) + (valD * numD)
 
-const valueOfJewels = (diamonds, emeralds, valueD, valueE) =>  // correct{
+// correct{
+const valueOfJewels = (diamonds, emeralds, valueD, valueE) =>
   return (diamonds * valueD) + (emeralds * valueE);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // payWithOvertime - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#17
 
-const payWithOverTime = (numWorked, normalRate, overRate) => ((numWorked - 8) * overRate) + (normalRate * 8) // half, only works as long as numWorked is 8 or more.
+// half, only works as long as numWorked is 8 or more.
+const payWithOverTime = (numWorked, normalRate, overRate) => ((numWorked - 8) * overRate) + (normalRate * 8)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // firstClassPostage - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#18
@@ -335,65 +390,76 @@ const payWithOverTime = (numWorked, normalRate, overRate) => ((numWorked - 8) * 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // weightOnJupiter - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#19
 
-const weightOnJupiter = (weight) => { // correct
+// correct
+const weightOnJupiter = (weight) => {
   return weight * (JUPITER_GRAVITY / EARTH_GRAVITY);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // gravity - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#20
 
-const gravity = (mass1, mass2, distance) => { // correct
+// correct
+const gravity = (mass1, mass2, distance) => {
   return ((mass1 * mass2) / distance ** 2) * G;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // averageWeight - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#21
 
-const averageWeight = (itemWeights, items) => { // correct
+// correct
+const averageWeight = (itemWeights, items) => {
   return itemWeights / items
 }
 
-const averageWeight=(weightOfitems,numOfItems)=>{ // correct
+// correct
+const averageWeight=(weightOfitems,numOfItems)=>{
   return (weightOfitems / numOfItems)
 }
 
-const averageWeight = (weight, items) => { // correct
+// correct
+const averageWeight = (weight, items) => {
   return weight / items;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // hypotenuse - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#22
 
-const hypotenuse = (l1, l2) => { // correct
+// correct
+const hypotenuse = (l1, l2) => {
   return Math.sqrt(l1**2 + l2**2)
 }
 
-const hypotenuse = (length1, length2) => { // half, missing square root.
+// half, missing square root.
+const hypotenuse = (length1, length2) => {
   return (length1 ** 2) + (length2 ** 2);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // maxRadius - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#23
 
-const maxRadius = (width, height) => { // correct
+// correct
+const maxRadius = (width, height) => {
   if (height >= width) {
     return width/2
   }
   else return height/2
 }
 
-const maxRadius = (width, height) => { // zero
+// zero
+const maxRadius = (width, height) => {
   return width * height;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // numCircles - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#24
 
-const numCircles = (radius, width) => { // correct
+// correct
+const numCircles = (radius, width) => {
   return Math.floor(width/(radius*2))
 }
 
-const numCircles = (radius, width) => { // zero
+// zero
+const numCircles = (radius, width) => {
   return Math.max(radius * width);
 };
 
@@ -403,166 +469,204 @@ const numCircles = (radius, width) => { // zero
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // fireAlarm - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#26
 
-const fireAlarm = (firealarmispulled, plannedfiredrill, smokedetected) => { // correct
+// correct
+const fireAlarm = (firealarmispulled, plannedfiredrill, smokedetected) => {
   return (firealarmispulled || plannedfiredrill || smokedetected)
 }
 
-const fireAlarm = (pulled, smoke, drill) => { // correct
+// correct
+const fireAlarm = (pulled, smoke, drill) => {
   return pulled || smoke || drill;
 };
 
-const fireAlarm = (pulled,smoke,drill) => { // correct
+// correct
+const fireAlarm = (pulled,smoke,drill) => {
   return (pulled||smoke||drill)
 }
 
-const fireAlarm = (pulled, smoke, planned) => { // correct
+// correct
+const fireAlarm = (pulled, smoke, planned) => {
   return pulled || smoke || planned
 }
 
-const fireAlarm=(smokeDetected,planedDrill,alarmPulled)=>{ // correct
+// correct
+const fireAlarm=(smokeDetected,planedDrill,alarmPulled)=>{
   return smokeDetected||planedDrill||alarmPulled
 }
 
-const fireAlarm = (pulled, smoke, planned) => { // correct
+// correct
+const fireAlarm = (pulled, smoke, planned) => {
   return pulled || smoke || planned
 }
 
-const fireAlarm = (pulled, smoke, drill) => { // correct
+// correct
+const fireAlarm = (pulled, smoke, drill) => {
   return pulled || smoke || drill
 }
 
-const fireAlarm = (pulled, smoke, drill) => pulled || smoke || drill  // correct
+// correct
+const fireAlarm = (pulled, smoke, drill) => pulled || smoke || drill
 
-const fireAlarm = (alarm, smoke, drill) => { // correct
+// correct
+const fireAlarm = (alarm, smoke, drill) => {
   return alarm || smoke || drill;
 };
 
-const fireAlarm = (pulled, smokeDetected, planned) => { // zero
+// zero
+const fireAlarm = (pulled, smokeDetected, planned) => {
   return pulled && smokeDetected || planned
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // canBePresident - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#27
 
-const canBePresident = (age, naturalBornCitizen, usFourteenYears) => { // correct
+// correct
+const canBePresident = (age, naturalBornCitizen, usFourteenYears) => {
   return age >= 35 && naturalBornCitizen && usFourteenYears >= 14;
 };
 
-const canBePresident = (age, citizen, years) => { // correct
+// correct
+const canBePresident = (age, citizen, years) => {
   return age >= 35 && citizen && years >= 14
 }
 
-const canBePresident = (age, citezen, years) => { // correct
+// correct
+const canBePresident = (age, citezen, years) => {
   return age >= 35 && citezen && years >=14
 }
 
-const canBePresident = (age, naturalBorn, lived) => (Math.floor(age)) > 34 && naturalBorn && (Math.floor(lived)) > 13 // correct
+// correct
+const canBePresident = (age, naturalBorn, lived) => (Math.floor(age)) > 34 && naturalBorn && (Math.floor(lived)) > 13
 
-const canBePresident = (age, naturalBorn, yearsInUS) => { // correct, I let 37 vs 35 slide.
+// correct, I let 37 vs 35 slide.
+const canBePresident = (age, naturalBorn, yearsInUS) => {
   return age >= 37 && naturalBorn && yearsInUS >= 14;
 };
 
-const canBePresident = (age, naturalborncitizen, yearslivedinUS) => { // correct
+// correct
+const canBePresident = (age, naturalborncitizen, yearslivedinUS) => {
   if (age >= 35 && naturalborncitizen && yearslivedinUS >= 14) {
     return true
   }
   else return false
 }
 
-const canBePresident = (ageInYears, bornCitizen, yearsLivedInUs) => { // half
+// half
+const canBePresident = (ageInYears, bornCitizen, yearsLivedInUs) => {
   return ageInYears>35 && bornCitizen && yearsLivedInUs
 }
 
-const canBePresident = (atleast35yearsold, naturalborncitizen, livedinUSfor14years) => { // half
+// half
+const canBePresident = (atleast35yearsold, naturalborncitizen, livedinUSfor14years) => {
   return (atleast35yearsold && naturalborncitizen && livedinUSfor14years)
 }
 
-const canBePresident=(atLeast35,naturalBornCitizen,liveInUS14Years)=> { // half
+// half
+const canBePresident=(atLeast35,naturalBornCitizen,liveInUS14Years)=> {
   return atLeast35 && naturalBornCitizen && liveInUS14Years
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // willSeeTweet - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#28
 
-const willSeeTweet=(followingTweeter,followingRetweeter,noTweetIfblocked) => { // correct
+// correct
+const willSeeTweet=(followingTweeter,followingRetweeter,noTweetIfblocked) => {
   return (followingTweeter || followingRetweeter) && !noTweetIfblocked
 }
 
-const willSeeTweet = (follow, followretweet, blocked) => { // correct, though *way* too complicated!
+// correct, though *way* too complicated!
+const willSeeTweet = (follow, followretweet, blocked) => {
   if (follow && !followretweet && !blocked || !follow && followretweet && !blocked || follow && followretweet && !blocked) {
     return true
   }
   else return false
 }
 
-const willSeeTweet = (followThePerson, followThePersonWhoRT, blocked) => { // half, missing return
+// half, missing return
+const willSeeTweet = (followThePerson, followThePersonWhoRT, blocked) => {
   (followThePerson || followThePersonWhoRT) && !blocked;
 };
 
-const willSeeTweet = (followthepersontweet, followapersonretweeted, blocked) => { // half, precedence not quite right
+// half, precedence not quite right
+const willSeeTweet = (followthepersontweet, followapersonretweeted, blocked) => {
   return (followthepersontweet || followapersonretweeted && ! blocked)
 }
 
-const willSeeTweet =  (followed, retweeted, blocked) => { // half, same
+// half, same
+const willSeeTweet =  (followed, retweeted, blocked) => {
   return followed || retweeted && !blocked
 }
 
-const willSeeTweet = (follow, retweet, blocked) => { // half, same
+// half, same
+const willSeeTweet = (follow, retweet, blocked) => {
   return follow || retweet && !blocked;
 };
 
-const willSeeTweet = (ft,fsrt,bt) => { // half
+// half
+const willSeeTweet = (ft,fsrt,bt) => {
   return (ft||fsrt||!bt)
 }
 
-const willSeeTweet = (follows, retweet, blocked) => { // half
+// half
+const willSeeTweet = (follows, retweet, blocked) => {
   return follows || retweet || !blocked
 }
 
-const willSeeTweet = (tweeter, retweeterFollower, blocked) => { // half, precedence plus & instead of &&
+// half, precedence plus & instead of &&
+const willSeeTweet = (tweeter, retweeterFollower, blocked) => {
   return tweeter || retweeterFollower &! blocked
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // needHeavyCoat - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#29
 
-const needHeavyCoat = (goingoutside, somewherecold) => { // correct
+// correct
+const needHeavyCoat = (goingoutside, somewherecold) => {
   return goingoutside && somewherecold
 }
 
-const needHeavyCoat = (goingOutside, cold) => { // correct
+// correct
+const needHeavyCoat = (goingOutside, cold) => {
   return goingOutside && cold;
 };
 
-const needHeavyCoat = (outside, cold) => { // correct
+// correct
+const needHeavyCoat = (outside, cold) => {
   return outside && cold
 }
 
-const needHeavyCoat = (goingOutside, somewhereCold) => { // correct
+// correct
+const needHeavyCoat = (goingOutside, somewhereCold) => {
   return goingOutside && somewhereCold
 }
 
-const needHeavyCoat=(goingOutside,somewhereCold)=>{ // correct
+// correct
+const needHeavyCoat=(goingOutside,somewhereCold)=>{
   return goingOutside && somewhereCold
 }
 
-const needHeavyCoat = (out, cold) => { // correct
+// correct
+const needHeavyCoat = (out, cold) => {
   return out && cold
 }
 
-const needHeavyCoat = (goOutside, cold) => { // correct
+// correct
+const needHeavyCoat = (goOutside, cold) => {
   return goOutside && cold
 }
 
-const needHeavyCoat = (cold, outside) => { // correct
+// correct
+const needHeavyCoat = (cold, outside) => {
   return cold && outside
 }
 
-const needHeavyCoat = (outside, cold) => { // correct
+// correct
+const needHeavyCoat = (outside, cold) => {
   return outside && cold;
 };
 
-const needHeavyCoat = (outside, cold) => { // correct
+// correct
+const needHeavyCoat = (outside, cold) => {
   if (outside && cold) {
     return true
   }
@@ -572,472 +676,578 @@ const needHeavyCoat = (outside, cold) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // needSunscreen - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#30
 
-const needSunscreen = (beach, skiing) => { // correct
+// correct
+const needSunscreen = (beach, skiing) => {
   return beach || skiing
 }
 
-const needSunscreen = (beach, skis) => { // correct
+// correct
+const needSunscreen = (beach, skis) => {
   return beach || skis
 }
 
-const needSunscreen = (goingToBeach, goingSkiing) => { // correct
+// correct
+const needSunscreen = (goingToBeach, goingSkiing) => {
   return goingToBeach || goingSkiing
 }
 
-const needSunscreen=(goingSkiing,goingToBeach)=>{ // correct
+// correct
+const needSunscreen=(goingSkiing,goingToBeach)=>{
   return goingSkiing||goingToBeach
 }
 
-const needSunscreen = (beach, ski) => { // correct
+// correct
+const needSunscreen = (beach, ski) => {
   return beach || ski
 }
 
-const needSunscreen = (goToBeach, goSkiing) => { // correct
+// correct
+const needSunscreen = (goToBeach, goSkiing) => {
   return goToBeach || goSkiing
 }
 
-const needSunScreen = (beach, ski) => beach || ski // correct
+// correct
+const needSunScreen = (beach, ski) => beach || ski
 
-const needSunscreen = (beach, skiing) => { // correct
+// correct
+const needSunscreen = (beach, skiing) => {
   if (!beach && !skiing) {
     return false
   }
   else return true
 }
 
-const needSunScreen = (goingToBeach, goingSkiing) => { // half, missing return
+// half, missing return
+const needSunScreen = (goingToBeach, goingSkiing) => {
   goingToBeach || goingSkiing;
 };
 
-const needSunscreen = (beach, skiing) => { // zero
+// zero
+const needSunscreen = (beach, skiing) => {
   return beach && skiing;
 };
 
-const needSunscreen = (goingtothebeach, goingskiing) => { // zero
+// zero
+const needSunscreen = (goingtothebeach, goingskiing) => {
   return goingtothebeach && goingskiing
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // needMittens - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#31
 
-const needMittens = (goingoutside, somewherewarm) => { // correct
+// correct
+const needMittens = (goingoutside, somewherewarm) => {
   return goingoutside && ! somewherewarm
 }
 
-const needMittens = (outside, warm) => { // correct
+// correct
+const needMittens = (outside, warm) => {
   return outside && !warm
 }
 
-const needMittens=(goingOutside,somewhereWarm)=>{ // correct
+// correct
+const needMittens=(goingOutside,somewhereWarm)=>{
   return goingOutside&&!somewhereWarm
 }
 
-const needMittens = (out, warm) => { // correct
+// correct
+const needMittens = (out, warm) => {
   return out && !warm
 }
 
-const needMittens = (goOut, warm) => { // correct
+// correct
+const needMittens = (goOut, warm) => {
   return goOut && !warm
 }
 
-const needMittens = (outside, warm) => { // correct
+// correct
+const needMittens = (outside, warm) => {
   return outside && !warm;
 };
 
-const needMittens = (goingOutside, somewhereWarm) => { // half, missing return
+// half, missing return
+const needMittens = (goingOutside, somewhereWarm) => {
   goingOutside && !somewhereWarm;
 };
 
-const needMittens = (goOutside, warm) => { // half, & instead of &&
+// half, & instead of &&
+const needMittens = (goOutside, warm) => {
   return goOutside &! warm
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // isVenomous - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#32
 
-const isVenomous = (striped, blue) => { // correct
+// correct
+const isVenomous = (striped, blue) => {
   return striped || !blue;
 };
 
-const isVenomous = (striped,blueHead) => { // correct
+// correct
+const isVenomous = (striped,blueHead) => {
   if(!striped && blueHead ){
     return false}
     else true
 }
 
-const isVenomous = (stripedSnake, blueHeaded) => { // half, missing return
+// half, missing return
+const isVenomous = (stripedSnake, blueHeaded) => {
   stripedSnake || !blueHeaded;
 };
 
-const isVenomous = (stripedsnake, blueheadsnake) => { // half, logic not quite right
+// half, logic not quite right
+const isVenomous = (stripedsnake, blueheadsnake) => {
   return stripedsnake && ! blueheadsnake
 }
 
-
-const isVenomous = (stripedSnake, blueHeadSnake) => { // half, logic not quite right plus & instead of &&
+// half, logic not quite right plus & instead of &&
+const isVenomous = (stripedSnake, blueHeadSnake) => {
   return stripedSnake &! blueheadSnake
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // isMagicNumber - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#33
 
-const isMagicNumber = (n) => { // correct
+// correct
+const isMagicNumber = (n) => {
   return n === 42 || n === 17
 }
 
-const isMagicNumber = (x) => { // correct
+// correct
+const isMagicNumber = (x) => {
   return x === 42 || x === 17
 }
 
-const isMagicNumber = (number) => { // zero, can't index numbers.
+// zero, can't index numbers.
+const isMagicNumber = (number) => {
   return number[42] || number[17];
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // canSleepIn - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#34
 
-const canSleepIn = (weekday, vacation) => { // correct
+// correct
+const canSleepIn = (weekday, vacation) => {
   return !weekday || vacation;
 };
 
-const canSleepIn = (weekday, vacation) => { // correct
+// correct
+const canSleepIn = (weekday, vacation) => {
   if (!weekday || vacation) { return true
   }
   else return false
 }
 
-const canSleepIn = (weekday,vacation) => { // correct, let the misspelling of false slide.
+// correct, let the misspelling of false slide.
+const canSleepIn = (weekday,vacation) => {
   if (!vacation && weekday){
     return flase}
     else true
 }
 
-const canSleepIn = (weekday, vacation) => { // half, exactly inverted
+// half, exactly inverted
+const canSleepIn = (weekday, vacation) => {
   return !weekday && vacation
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // canGoToProm - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#35
 
-const canGoToProm = (senior, inviteSen, promEx) => (senior || inviteSen) && !promEx // correct
+// correct
+const canGoToProm = (senior, inviteSen, promEx) => (senior || inviteSen) && !promEx
 
-const canGoToProm = (senior, invited, list) => { // half, operator precedence problem, && is higher than ||
+// half, operator precedence problem, && is higher than ||
+const canGoToProm = (senior, invited, list) => {
   return (senior || invited && !list)
 }
 
-const canGoToProm = (senior, invited, exclusion) => { // half, same
+// half, same
+const canGoToProm = (senior, invited, exclusion) => {
   return senior || invited && exclusion
 }
 
-const canGoToProm = (senior, invited, list) => { // half, same
+// half, same
+const canGoToProm = (senior, invited, list) => {
   return senior || invited && !list
 }
 
-const canGoToProm = (senior, invited, excluded) => { // half, same
+// half, same
+const canGoToProm = (senior, invited, excluded) => {
   return senior || invited && !excluded;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // getsSpeedingTicket - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#36
 
-const getsSpeedingTicket = (carSpeed, copIsGrouchy) => { // correct
+// correct
+const getsSpeedingTicket = (carSpeed, copIsGrouchy) => {
   return carSpeed > 65 && copIsGrouchy || carSpeed > 70
 }
 
-const getsSpeedingTicket = (mph, grouchyCop) => { // correct
+// correct
+const getsSpeedingTicket = (mph, grouchyCop) => {
   return (mph > 70 && !grouchyCop) || (mph > 65 && grouchyCop);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // evenGreaterThanZero - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#37
 
-const evenGreaterThanZero = (number) => { // correct
+// correct
+const evenGreaterThanZero = (number) => {
   return number > 0 && number % 2 === 0;
 };
 
-const evenGreaterThanZero = (number) => { // correct
+// correct
+const evenGreaterThanZero = (number) => {
   return number > 0 && number % 2 === 0
 }
 
-const evenGreaterThanZero = (n) => { // half, need % not /
+// half, need % not /
+const evenGreaterThanZero = (n) => {
   if (n/2 === 0 && n > 0) return true
   else return false
 }
 
-const evenGreaterThanZero = (num) => { // half, need % not /
+// half, need % not /
+const evenGreaterThanZero = (num) => {
   return num / 2 === 0 && num > 0;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // isLeapYear - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#38
 
-const isLeapYear = (year) => { // correct
+// correct
+const isLeapYear = (year) => {
   return year % 4 === 0 && !(year % 100 === 0 && year % 400 !== 0)
 }
 
-const isLeapYear = (year) => { // zero, wants % not /
+// zero, needs % not /
+const isLeapYear = (year) => {
   return year / 4 === 0 || (year / 100 === 0 && year / 400 === 0);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // okaySpeed - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#39
 
-const okaySpeed = (postedMph, carMph) => { // half, this is exactly inverted from the desired output.
+// half, this is exactly inverted from the desired output.
+const okaySpeed = (postedMph, carMph) => {
   return carMph >= postedMph + 10 || carMph <= postedMph - 10;
 };
 
-const okaySpeed = (speedlimitinmilesperhour, speedacarisgoinginmilesperhour) => { // zero, needs some math.
+// zero, needs some math.
+const okaySpeed = (speedlimitinmilesperhour, speedacarisgoinginmilesperhour) => {
 return speedlimitinmilesperhour && speedacarisgoinginmilesperhour
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // twiceAsExpensive - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#40
 
-const twiceAsExpensive = (price1, price2) => { // correct
+// correct
+const twiceAsExpensive = (price1, price2) => {
   return price1 > price2 * 2
 }
 
-const twiceAsExpensive = (item1, item2) => { // correct
+// correct
+const twiceAsExpensive = (item1, item2) => {
   return item1 > (item2 * 2);
 };
 
-const twiceAsExpensive = (price1, price2) => { // half, should be > not ===
+// half, should be > not ===
+const twiceAsExpensive = (price1, price2) => {
   return price1 === price2 * 2
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // winningRecord - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#41
 
-const winningRecord = (wins, losses, ties) => { // correct
+// correct
+const winningRecord = (wins, losses, ties) => {
   return wins > losses + ties
 }
 
-const winningRecord = (wins, losses, ties) => { // correct
+// correct
+const winningRecord = (wins, losses, ties) => {
   return wins > losses + ties;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // aFartherThanB - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#42
 
-const aFartherThanB = (num, num2, num3) => (num - num3) > (num2 - num3) // half, needs absolute value
+// half, needs absolute value
+const aFartherThanB = (num, num2, num3) => (num - num3) > (num2 - num3)
 
-const aFartherThanB = (num1, num2, num3) => { // half, same
+// half, same
+const aFartherThanB = (num1, num2, num3) => {
   return num3 - num1 > num3 - num2;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // firstFewEveryOther - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#43
 
-const firstFewEveryOther = (s) => s[0] + s[2] + s[4]; // correct
+// correct
+const firstFewEveryOther = (s) => s[0] + s[2] + s[4];
 
-const firstFewEveryOther = (s) => { // correct
+// correct
+const firstFewEveryOther = (s) => {
   return s[0] + s[2] + s[4]
 }
 
-const firstFewEveryOther = (s) => { // correct
+// correct
+const firstFewEveryOther = (s) => {
   return s[0] + s[2] + s[4]
 }
 
-const firstFewEveryOther = (string) => { // correct
+// correct
+const firstFewEveryOther = (string) => {
   return string[0] + string[2] + string[4]
 }
 
-const firstFewEveryOther=(s)=>{ // correct
+// correct
+const firstFewEveryOther=(s)=>{
   return s[0]+s[2]+s[4]
 }
 
-const firstFewEveryOther = (s) => { // correct
+// correct
+const firstFewEveryOther = (s) => {
   return s[0] + s[2] + s[4]
 }
 
-const firstFewEveryOther = (s) => { // half, mising return
+// half, mising return
+const firstFewEveryOther = (s) => {
   s[0] + s[2] + s[4]
 };
 
-const firstFewEveryOther = (s) => { // zero, mixing method calling and indexing
+// zero, mixing method calling and indexing
+const firstFewEveryOther = (s) => {
   return s.substring[0] + s.substring[2] + s.substring[4]
 }
 
-const firstFewEveryOther = (s) => { // zero, substring doesn't work that way.
+// zero, substring doesn't work that way.
+const firstFewEveryOther = (s) => {
   return s.substring(0, 2, 4);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // firstHalf - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#44
 
-const firstHalf = (s) => // correct
+// correct
+const firstHalf = (s) =>
   s.substring(0, s.length / 2);
 
-const firstHalf = (s) =>{ // correct
+// correct
+const firstHalf = (s) =>{
 return s.substring(0,s.length/2)
 }
 
-const firstHalf = (s) => s.substring(0, (s.length / 2)); // correct
+// correct
+const firstHalf = (s) => s.substring(0, (s.length / 2));
 
-const firstHalf = (s) => { // correct
+// correct
+const firstHalf = (s) => {
   return s.substring(0, s.length / 2)
 }
 
-const firstHalf = (s) => { // correct
+// correct
+const firstHalf = (s) => {
   return s.substring(0, s.length / 2)
 }
 
-const firstHalf = (string) => { // correct
+// correct
+const firstHalf = (string) => {
   return string.substring(0,string.length/2)
 }
 
-const firstHalf=(s)=>{ // correct
+// correct
+const firstHalf=(s)=>{
   return s.substring(0,s.length/2)
 }
 
-const firstHalf = (s) => { // correct
+// correct
+const firstHalf = (s) => {
   return s.slice(0, s.length/2)
 }
 
-const firstHalf = (s) => { // correct
+// correct
+const firstHalf = (s) => {
   return s.substring(0, s.length/2)
 }
 
-const firstHalf = (s) => { // correct
+// correct
+const firstHalf = (s) => {
   return s.substring(0, s.length / 2);
 };
 
-const firstHalf = (s) => { // zero
+// zero
+const firstHalf = (s) => {
   return s.substring(1,0)+s.substring(s.length/2)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // secondHalf - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#45
 
-const secondHalf = (s) => { // correct
+// correct
+const secondHalf = (s) => {
   return s.substring(s.length/2)
 }
 
-const secondHalf = (s) => s.substring(s.length / 2); // correct
+// correct
+const secondHalf = (s) => s.substring(s.length / 2);
 
-const secondHalf = (s) => // correct, though I'd write it all one one line to emphasize that it's in shorthand form
+// correct, though I'd write it all one one line to emphasize that it's in shorthand form
+const secondHalf = (s) =>
   s.substring(s.length / 2);
 
-const secondHalf = (s) => { // correct
+// correct
+const secondHalf = (s) => {
   return s.substring(s.length / 2)
 }
 
-const secondHalf = (s) => { // correct
+// correct
+const secondHalf = (s) => {
   return s.substring(s.length/2)
 }
 
-const secondHalf = (s) => { // correct
+// correct
+const secondHalf = (s) => {
   return s.substring(s.length / 2)
 }
 
-const secondHalf=(s)=>{ // correct
+// correct
+const secondHalf=(s)=>{
   return s.substring(s.length/2)
 }
 
-const secondHalf = (s) => { // correct
+// correct
+const secondHalf = (s) => {
   return s.slice(s.length/2, s.length)
 }
 
-const secondHalf = (s) => { // correct
+// correct
+const secondHalf = (s) => {
   return s.substring(s.length / 2);
 };
 
-const secondHalf = (string) => { // correct, but second arg to substring is not needed in this case
+// correct, but second arg to substring is not needed in this case
+const secondHalf = (string) => {
   return string.substring(string.length/2,string.length)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // swapFrontAndBack - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#46
 
-const swapFrontAndBack = (s) => { // correct, love the use of the other functions.
+// correct, love the use of the other functions.
+const swapFrontAndBack = (s) => {
   return secondHalf(s) + firstHalf(s)
 }
 
-const swapFrontAndBack = (string) => { // correct, same
+// correct, same
+const swapFrontAndBack = (string) => {
   return secondHalf(string) + firstHalf(string)
 }
 
-const swapFrontAndBack = (s) => { // correct
+// correct
+const swapFrontAndBack = (s) => {
   return secondHalf(s) + firstHalf(s)
 }
 
-const swapFrontAndBack = (s) =>{ // correct, love the use of the other functions. Could use some indentation.
+// correct, love the use of the other functions. Could use some indentation.
+const swapFrontAndBack = (s) =>{
 return secondHalf(s)+ firstHalf(s)
 }
 
-const swapFrontAndBack = (s) => // correct
+// correct
+const swapFrontAndBack = (s) =>
   s.substring(s.length / 2) + s.substring(0, s.length / 2);
 
-const swapFrontAndBack = (s) => s.substring(s.length / 2) + s.substring(0, (s.length / 2)); // correct
+// correct
+const swapFrontAndBack = (s) => s.substring(s.length / 2) + s.substring(0, (s.length / 2));
 
-const swapFrontAndBack = (s) => { // correct
+// correct
+const swapFrontAndBack = (s) => {
   return s.substring(s.length / 2) + s.substring(0, s.length / 2)
 }
 
-const swapFrontAndBack = (s) => s.substring(s.length/2) + s.substring(0, s.length/2) // correct
+// correct
+const swapFrontAndBack = (s) => s.substring(s.length/2) + s.substring(0, s.length/2)
 
-const swapFrontAndBack = (s) => { // correct
+// correct
+const swapFrontAndBack = (s) => {
   return s.substring(s.length / 2) + s.substring(0, s.length / 2);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // upDown - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#47
 
-const upDown = (s) => // correct
+// correct
+const upDown = (s) =>
   s.toUpperCase() + s.toLowerCase();
 
-const upDown = (s) => { // correct
+// correct
+const upDown = (s) => {
 return s.toUpperCase()+s.toLowerCase()
 }
 
-const upDown = (s) => s.toUpperCase() + s.toLowerCase(); // correct
+// correct
+const upDown = (s) => s.toUpperCase() + s.toLowerCase();
 
-const upDown = (s) => { // correct
+// correct
+const upDown = (s) => {
   return s.toUpperCase() + s.toLowerCase()
 }
 
-const upDown = (s) => { // correct
+// correct
+const upDown = (s) => {
   return s.toUpperCase() + s.toLowerCase()
 }
 
-const upDown = (string) => { // correct
+// correct
+const upDown = (string) => {
   return string.toUpperCase() + string.toLowerCase()
 }
 
-const upDown = (s) => { // correct
+// correct
+const upDown = (s) => {
   return s.toUpperCase() + s.toLowerCase()
 }
 
-const upDown = (s) => { // correct
+// correct
+const upDown = (s) => {
   return s.toUpperCase() + s.toLowerCase()
 }
 
-const upDown = (s) => { // correct
+// correct
+const upDown = (s) => {
   return s.toUpperCase() + s.toLowerCase();
 };
 
-const upDown = (s) => { // half, literally half right, i.e. the first half.
+// half, literally half right, i.e. the first half.
+const upDown = (s) => {
   return s.toUpperCase() + push.s
 }
 
-const upDown = (s) => { // zero
+// zero
+const upDown = (s) => {
   return s.substring(toUpperCase(0,2))+s.substring(s.length*2)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // upDownLastCharacter - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#48
 
-const upDownLastCharacter = (s) => s[s.length - 1].toUpperCase() + s[s.length - 1].toLowerCase(); // correct
+// correct
+const upDownLastCharacter = (s) => s[s.length - 1].toUpperCase() + s[s.length - 1].toLowerCase();
 
-const upDownLastCharacter = (s) => { // correct
+// correct
+const upDownLastCharacter = (s) => {
   return s[s.length - 1].toUpperCase() + s[s.length - 1].toLowerCase;
 };
 
-const upDownLastCharacter = (s) => { // correct
+// correct
+const upDownLastCharacter = (s) => {
   return s.slice(s.length - 1).toUpperCase() + s.slice(s.length - 1).toLowerCase()
 }
 
-const upDownLastCharacter = (s) => { // correct
+// correct
+const upDownLastCharacter = (s) => {
   return s.substring(s.length - 1, s.length).toUpperCase() +
     s.substring(s.length - 1, s.length).toLowerCase()
 }
@@ -1045,92 +1255,113 @@ const upDownLastCharacter = (s) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // firstAndLast - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#49
 
-const firstAndLast = (s) => // correct
+// correct
+const firstAndLast = (s) =>
   s[0] + s[s.length - 1];
 
-const firstAndLast = (s) => s[0] + s[s.length - 1]; // correct
+// correct
+const firstAndLast = (s) => s[0] + s[s.length - 1];
 
-const firstAndLast = (s) => { // correct
+// correct
+const firstAndLast = (s) => {
   return s[0] + s[s.length - 1]
 }
 
-const firstAndLast = (s) => { // correct
+// correct
+const firstAndLast = (s) => {
   return s[0] + s[s.length - 1];
 };
 
-const firstAndLast = (s) => { // correct
+// correct
+const firstAndLast = (s) => {
 return s[0]+ s.substring(s.length-1)
 }
 
-const firstAndLast = (s) => { // correct
+// correct
+const firstAndLast = (s) => {
   return s[0] + s.substring(s.length - 1, s.length)
 }
 
-const firstAndLast = (s) => { // half
+// half
+const firstAndLast = (s) => {
   return s.substring(0,1) + s.substring(s.length, -1)
 }
 
-const firstAndLast=(s)=>{ // zero
+// zero
+const firstAndLast=(s)=>{
   return s.substring(0)+ s.substring(s.length -1)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // simplePigLatin - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#50
 
-const simplePigLatin = (s, v) => { // correct
+// correct
+const simplePigLatin = (s, v) => {
   return s.substring(v, s.length) + s.substring(0, v) + 'ay'
 }
 
-const simplePigLatin = (s, x) => s.substring(x - 1) + s.substring(0, x - 1) + 'ay'; // half, basically right but off by one
+// half, basically right but off by one
+const simplePigLatin = (s, x) => s.substring(x - 1) + s.substring(0, x - 1) + 'ay';
 
-const simplePigLatin = () => { // zero
+// zero
+const simplePigLatin = () => {
   return s.substring(s.search(/['aeiou']/))+s.substring(0,s.search -1)+'aeiou'
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // randomCharacter - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#51
 
-const randomCharacter = (s) => s[rand(s.length)]; // correct
+// correct
+const randomCharacter = (s) => s[rand(s.length)];
 
-const randomCharacter = (s) => { // correct
+// correct
+const randomCharacter = (s) => {
   return s[rand(s.length)]
 }
 
-const randomCharacter = (s) => { // correct
+// correct
+const randomCharacter = (s) => {
   return s[rand(s.length)]
 }
 
-const randomCharacter = (s) => { // zero, rand was specified to take a number, not a string.
+// zero, rand was specified to take a number, not a string.
+const randomCharacter = (s) => {
   return rand(s);
 };
 
-const randomCharacter = (s) =>{ // zero
+// zero
+const randomCharacter = (s) =>{
 return Math.random(s)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // randomCharacterUpDown - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#52
 
-const randomCharacterUpDown = (s) => { // correct
+// correct
+const randomCharacterUpDown = (s) => {
   let n = rand(s.length);
   return s[n].toUpperCase() + s[n].toLowerCase();
 }
 
-const randomCharacterUpDown = (s) => { // half, calling rand twice will pick two different random characters.
+// half, calling rand twice will pick two different random characters.
+const randomCharacterUpDown = (s) => {
   return s[rand(s.length)].toUpperCase() +
     s[rand(s.length)].toLowerCase()
 }
 
-const randomCharacterUpDown = (s) => { // zero, incorrect use of rand plus the double rand issue of the previous
+// zero, incorrect use of rand plus the double rand issue of the previous
+const randomCharacterUpDown = (s) => {
   return rand(s).toUpperCase + rand(s).toLowerCase;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // isAllUpperCase - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#53
 
-const isAllUpperCase = (s) => s.toUpperCase() === s; // correct
+// correct
+const isAllUpperCase = (s) => s.toUpperCase() === s;
 
-const isAllUpperCase = (s) => { // correct
+// correct
+const isAllUpperCase = (s) => {
   if (s.toUpperCase() === s) {
     return true
   } else {
@@ -1138,27 +1369,33 @@ const isAllUpperCase = (s) => { // correct
   }
 }
 
-const isAllUpperCase = () => { // correct
+// correct
+const isAllUpperCase = () => {
   return s.toUpperCase() ===s
 }
 
-const isAllUpperCase = (s) => { // correct
+// correct
+const isAllUpperCase = (s) => {
   if (s === s.toUpperCase()) { return true
   }
   else return false
 }
 
-const isAllUpperCase = (s) => s.toUpperCase() === s // correct
+// correct
+const isAllUpperCase = (s) => s.toUpperCase() === s
 
-const isAllUpperCase = (s) => { // half, need to call toUpperCase
+// half, need to call toUpperCase
+const isAllUpperCase = (s) => {
   return s === s.toUpperCase
 }
 
-const isAllUpperCase=(s)=>{ // zero, no comparison, need to call toUpperCase, and substring is gratuitious
+// zero, no comparison, need to call toUpperCase, and substring is gratuitious
+const isAllUpperCase=(s)=>{
   return s.substring().toUpperCase
 }
 
-const isAllUpperCase = (s) => { // zero, toUpperCase doesn't take arguments and doesn't return a boolean
+// zero, toUpperCase doesn't take arguments and doesn't return a boolean
+const isAllUpperCase = (s) => {
   if (s.toUpperCase(s.length()) === true) {
     return true
   }
@@ -1168,9 +1405,11 @@ const isAllUpperCase = (s) => { // zero, toUpperCase doesn't take arguments and 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // sameIgnoringCase - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#54
 
-const sameIgnoringCase = (s, i) => s.toLowerCase() === i.toLowerCase(); // correct
+// correct
+const sameIgnoringCase = (s, i) => s.toLowerCase() === i.toLowerCase();
 
-const sameIgnoringCase = (s1, s2) => { // correct
+// correct
+const sameIgnoringCase = (s1, s2) => {
   if (s1.toUpperCase() === s2.toUpperCase()) {
     return true
   } else {
@@ -1178,110 +1417,134 @@ const sameIgnoringCase = (s1, s2) => { // correct
   }
 }
 
-const sameIgnoringCase = (s1, s2) => { // zero, doesn't ignore case
+// zero, doesn't ignore case
+const sameIgnoringCase = (s1, s2) => {
   if (s1 === s2) { return true
   }
   else return false
 }
 
-const sameIgnoringCase = (s1, s2) => { // zero, same as previous
+// zero, same as previous
+const sameIgnoringCase = (s1, s2) => {
   return s1 === s2;
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // firstName - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#55
 
-const firstName = (s) => s.substring(0, s.indexOf(' ')); // correct
+// correct
+const firstName = (s) => s.substring(0, s.indexOf(' '));
 
-const firstName = (s) => { // correct
+// correct
+const firstName = (s) => {
   return s.substring(0, s.indexOf(' '))
 }
 
-const firstName = (s) => { // zero, need to use indexOf and also the - 1 isn't needed.
+// zero, need to use indexOf and also the - 1 isn't needed.
+const firstName = (s) => {
   return s.indexOf(0, ' ' - 1);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // lastName - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#56
 
-const lastName = (s) => s.substring(s.indexOf(' ') + 1); // correct
+// correct
+const lastName = (s) => s.substring(s.indexOf(' ') + 1);
 
-const lastName = (s) => { // correct, though second argument, s.length, not actually needed in this case
+// correct, though second argument, s.length, not actually needed in this case
+const lastName = (s) => {
   return s.substring(s.indexOf(' ') + 1, s.length)
 }
 
-const lastName = (s) => { // zero, needs indexOf.
+// zero, needs indexOf.
+const lastName = (s) => {
   return s.indexOf(' ' + 1);
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // initials - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#57
 
-const initials = (s) => s[0] + s[s.indexOf(' ') + 1] // correct
+// correct
+const initials = (s) => s[0] + s[s.indexOf(' ') + 1]
 
-const initials = (s) => { // correct
+// correct
+const initials = (s) => {
   return s.substring(0, 1) +
     s.substring(s.indexOf(' ') + 1, s.indexOf(' ') + 2)
 }
 
-const initials = (s) => { // half, needs indexOf
+// half, needs indexOf
+const initials = (s) => {
   return s[0] + s[' ' + 1];
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // upToX - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#58
 
-const upToX = (s) => s.substring(0, s.indexOf('x')) // correct
+// correct
+const upToX = (s) => s.substring(0, s.indexOf('x'))
 
-const upToX = (s) => { // correct
+// correct
+const upToX = (s) => {
   return s.substring(0, s.indexOf('x'))
 };
 
-const upToX = (s) => { // correct
+// correct
+const upToX = (s) => {
   return s.substring(0, (s.indexOf('x')))
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // charactersAround - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#59
 
-const charactersAround = (s, i) => s[i - 1] + s[i + 1] // correct
+// correct
+const charactersAround = (s, i) => s[i - 1] + s[i + 1]
 
-const charactersAround = (s, i) => { // correct
+// correct
+const charactersAround = (s, i) => {
   return s.substring(i - 1, i) + s.substring(i + 1, i + 2)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // middle - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#60
 
-const middle = (s) => s.substring(s.length / 4, (s.length / 4) * 3) // correct
+// correct
+const middle = (s) => s.substring(s.length / 4, (s.length / 4) * 3)
 
-const middle = (s) => { // correct
+// correct
+const middle = (s) => {
   return s.substring(s.length / 4, s.length - s.length / 4);
 }
 
-const middle = (string) => { // correct
+// correct
+const middle = (string) => {
   return string.substring(string.length / 4, string.length / 4 * 3)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // pair - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#61
 
-const paire = (s1, s2) => { // correct
+// correct
+const paire = (s1, s2) => {
   return s1 + ' and ' + s2
 }
 
-const paire = (string1, string2) => { // correct
+// correct
+const paire = (string1, string2) => {
   return string1 + ' and ' + string2
 }
 
-const paire = (s1, s2) => s1 + ' and ' + s2 // correct
+// correct
+const paire = (s1, s2) => s1 + ' and ' + s2
 
-const pair = (s1, s2) => s1 + 'and' + s2 // half, missing the spaces around the "and"
+// half, missing the spaces around the "and"
+const pair = (s1, s2) => s1 + 'and' + s2
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // containsX - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#62
 
-const containsX = (s) => { // correct
+// correct
+const containsX = (s) => {
     if (s.indexOf('x') >= 0) {
     return true
   } else {
@@ -1289,7 +1552,8 @@ const containsX = (s) => { // correct
   }
 }
 
-const containsX = (string) => { // correct
+// correct
+const containsX = (string) => {
   for (let x = 0; x < string.length; x++) {
     if (string[x] === 'x') {
       return true
@@ -1301,29 +1565,34 @@ const containsX = (string) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // slug - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#63
 
-const slug = (string1, string2, string3) => { // correct
+// correct
+const slug = (string1, string2, string3) => {
   return string1.toLowerCase() + '-' + string2.toLowerCase() + '-' + string3.toLowerCase()
 }
 
-const slug = (s, s2, s3) => { // correct
+// correct
+const slug = (s, s2, s3) => {
   return (s + '-' + s2 + '-' + s3).toLowerCase()
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // capitalize - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#64
 
-const capitalize = (string) => { // correct
+// correct
+const capitalize = (string) => {
   return string[0].toUpperCase() + string.substring(1, string.length).toLowerCase()
 }
 
-const capitalize = (s) => { // zero, toUpperCase doesn't take arguments.
+// zero, toUpperCase doesn't take arguments.
+const capitalize = (s) => {
   return s.toUpperCase(0,1)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // capitalizeName - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#65
 
-const capitalizeName = (fullName) => { // correct
+// correct
+const capitalizeName = (fullName) => {
   return capitalize(fullName.substring(0, fullName.indexOf(' '))) + ' ' + capitalize(fullName.substring(fullName.indexOf(' ') + 1, fullName.length))
 }
 
@@ -1333,7 +1602,8 @@ const capitalizeName = (fullName) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // yesIfEven - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#67
 
-const yesIfEven = (n) => { // correct
+// correct
+const yesIfEven = (n) => {
   if (n % 2 === 0) {
     return "yes"
   }
@@ -1343,23 +1613,27 @@ const yesIfEven = (n) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // logIfOk - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#68
 
-const logIfOk = (o) => { // correct
+// correct
+const logIfOk = (o) => {
   if (isOk(o)) {
     log(o)
   }
 }
 
-const logIfOk = (n) => { // correct
+// correct
+const logIfOk = (n) => {
   if (isOk(n))
   log(n)
 }
 
-const logIfOk = (a) => { // correct
+// correct
+const logIfOk = (a) => {
   if (isOk(a) === true)
     log(a)
 }
 
-const logIfOk = (n) => { // half, for basic logic and structure
+// half, for basic logic and structure
+const logIfOk = (n) => {
   if (isOk(n)) {
     log.isOK
   }
@@ -1368,7 +1642,8 @@ const logIfOk = (n) => { // half, for basic logic and structure
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // firstOk - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#69
 
-const firstOk = (arg) => { // correct
+// correct
+const firstOk = (arg) => {
   for (let i = 0; i < arg; i++) {
     if (isOk(arg)) {
       return i
@@ -1376,13 +1651,15 @@ const firstOk = (arg) => { // correct
   }
 }
 
-const firstOk = (x) => { // correct
+// correct
+const firstOk = (x) => {
   for(let i = 0; i < x; i++) {
     if (isOk(i)) { return i; }
   }
 }
 
-const firstOk = (num) => { // half, right structure
+// half, right structure
+const firstOk = (num) => {
   for (let i = 0; i < num; i++) {
     if (num === isOk) {
       return isOk
@@ -1391,7 +1668,8 @@ const firstOk = (num) => { // half, right structure
   }
 }
 
-const firstOk = (x) => { // zero
+// zero
+const firstOk = (x) => {
   for (let i =0; i < x; i++);
   if(isOk(i))
   return firstOk
@@ -1400,7 +1678,8 @@ const firstOk = (x) => { // zero
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // timeToLeet - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#70
 
-const timeToLeet = () => { // correct
+// correct
+const timeToLeet = () => {
   let count = 0;
   while (!isLeet(random10k())) {
     count++;
@@ -1408,7 +1687,8 @@ const timeToLeet = () => { // correct
   return count;
 };
 
-const timeToLeet = () => { // correct
+// correct
+const timeToLeet = () => {
   let count = 0;
   while (!isLeet(random10k())) {
    count++
@@ -1416,7 +1696,8 @@ const timeToLeet = () => { // correct
   return count;
 }
 
-const timeToLeet = () => { // zero, wrong use of isLeet function.
+// zero, wrong use of isLeet function.
+const timeToLeet = () => {
   for (let i = 0; i < i + 1; i++) {
     if (random10k() === isLeet()) {
       return i
@@ -1427,7 +1708,8 @@ const timeToLeet = () => { // zero, wrong use of isLeet function.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // classify - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#71
 
-const classify = (o) => { // correct
+// correct
+const classify = (o) => {
   if (isOk(o)) {
     recordOk(o)
   } else {
@@ -1435,7 +1717,8 @@ const classify = (o) => { // correct
   }
 }
 
-const classify = (arg) => { // correct
+// correct
+const classify = (arg) => {
   if (isOk(arg)) {
     recordOk(arg)
   } else {
@@ -1443,7 +1726,8 @@ const classify = (arg) => { // correct
   }
 }
 
-const classify = (x) => { // correct, letting slide some typos 0 for O and Notok rather than NotOk
+// correct, letting slide some typos 0 for O and Notok rather than NotOk
+const classify = (x) => {
  if (isOk(x)) {
    record0k(x);
  } else {
@@ -1451,7 +1735,8 @@ const classify = (x) => { // correct, letting slide some typos 0 for O and Notok
  }
 }
 
-const classify = (v) => { // correct
+// correct
+const classify = (v) => {
   if (isOk(v) === true)
   recordOk(v)
   else {
@@ -1459,13 +1744,15 @@ const classify = (v) => { // correct
 }
 }
 
-const classify = (v) => { // half, right structure. Didn't use isOk as a function
+// half, right structure. Didn't use isOk as a function
+const classify = (v) => {
   if (v === isOk) { return recordOk(v)
   }
   else return recordNotOk(v)
 }
 
-const classify = (num) => { // half, correct use of isOk, didn't call recordOk and recordNotOk
+// half, correct use of isOk, didn't call recordOk and recordNotOk
+const classify = (num) => {
   if (isOk(num) === true) {
     return recordOk
   }
@@ -1475,7 +1762,8 @@ const classify = (num) => { // half, correct use of isOk, didn't call recordOk a
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // threewayClassify - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#72
 
-const threewayClassify = (o) => { // correct
+// correct
+const threewayClassify = (o) => {
   if (isOk(o)) {
     recordOk(o)
   } else if (isMeh(o)) {
@@ -1485,7 +1773,8 @@ const threewayClassify = (o) => { // correct
   }
 }
 
-const threewayClassify = (x) => { // correct
+// correct
+const threewayClassify = (x) => {
   if (is0k(x)) {
    record0k(x);
  } else if (isMeh(x)) {
@@ -1494,7 +1783,8 @@ const threewayClassify = (x) => { // correct
    recordNot0k(x);
 }}
 
-const threewayClassify = (v) => { // half, right structure. Didn't use isOk and isMeh
+// half, right structure. Didn't use isOk and isMeh
+const threewayClassify = (v) => {
   if (v === okay) { return recordOk(v)
   }
   if (v === meh) { return recordMeh(v)
@@ -1502,7 +1792,8 @@ const threewayClassify = (v) => { // half, right structure. Didn't use isOk and 
   else return recordNotOk(v)
 }
 
-const threewayClassify = (num) => { // half, right structure and used isOk and isMeh but didn't call other functions
+// half, right structure and used isOk and isMeh but didn't call other functions
+const threewayClassify = (num) => {
   if (isOk(num) === true) {
     return recordOk
   }
@@ -1512,14 +1803,16 @@ const threewayClassify = (num) => { // half, right structure and used isOk and i
   else return recordNotOk
 }
 
-const threewayClassify = (arg) => { // zero, always returns true.
+// zero, always returns true.
+const threewayClassify = (arg) => {
 return isOk(arg) || isMeh(arg) || isNotOk(arg)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // sumOfSquares - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#73
 
-const sumOfSquares = (n) => { // correct
+// correct
+const sumOfSquares = (n) => {
   let sum = 0
   for (let i = 0; i < n; i++) {
     sum += i ** 2
@@ -1527,7 +1820,8 @@ const sumOfSquares = (n) => { // correct
   return sum
 }
 
-const sumOfSquares = (arg) => { // correct
+// correct
+const sumOfSquares = (arg) => {
   let final = 0
   for (let i = 0; i < arg; i++) {
     final = final + i**2
@@ -1538,7 +1832,8 @@ const sumOfSquares = (arg) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // pairs - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#74
 
-const pairs = (number) => { // correct
+// correct
+const pairs = (number) => {
   for (let x = 1; x < number; x++) {
     for (let y = 1; y < number; y++) {
       pair(x, y)
@@ -1549,7 +1844,8 @@ const pairs = (number) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // timesTable - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#75
 
-const timesTable = (number) => { // correct
+// correct
+const timesTable = (number) => {
   for (let x = 1; x < number + 1; x++) {
     for (let y = 1; y < number + 1; y++) {
       emit(x, y, x * y)
@@ -1560,7 +1856,8 @@ const timesTable = (number) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // sumSquares - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#76
 
-const sumSquares = (n) => { // half, n is a number so n.length doesn't make sense
+// half, n is a number so n.length doesn't make sense
+const sumSquares = (n) => {
   let sum = 0
   for(let i = 0; i < n.length; i++) {
     sum = sum + i**2
@@ -1571,7 +1868,8 @@ const sumSquares = (n) => { // half, n is a number so n.length doesn't make sens
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // countXs - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#77
 
-const countXs = (s) => { // correct
+// correct
+const countXs = (s) => {
   let count = 0
   for (let i = 0; i < s.length; i++) {
     if (s[i] === 'x') {
@@ -1581,7 +1879,8 @@ const countXs = (s) => { // correct
   return count
 }
 
-const countXs = (s) => { // correct
+// correct
+const countXs = (s) => {
   let xs = 0;
   for (let i = 0; i < s.length; i++) {
     if (s[i] === 'x')
@@ -1593,70 +1892,86 @@ const countXs = (s) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // makeRow - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#78
 
-const makeRow = () => { // correct
+// correct
+const makeRow = () => {
   return ['', '', '']
 }
 
-const makeRow = () => { // correct
+// correct
+const makeRow = () => {
   return ['','','']
 }
 
-const makeRow = () => { // correct
+// correct
+const makeRow = () => {
   return [' ', ' ', ' ']
 }
 
-const makeRow = () => { // correct
+// correct
+const makeRow = () => {
   return ['','','']
 }
 
-const makeRow=()=>{ // correct
+// correct
+const makeRow=()=>{
   return ['','','']
 }
 
-const makeRow = () => { // correct
+// correct
+const makeRow = () => {
   return ['', '','']
 }
 
-const makeRow = () => { // correct
+// correct
+const makeRow = () => {
   return ['' , '' , '']
 }
 
-const makeRow = () => { // correct, let slide the ' ', vs ''.
+// correct, let slide the ' ', vs ''.
+const makeRow = () => {
   return [' ', ' ', ' ']
 };
 
-const makeRow = () => { // half, missing return
+// half, missing return
+const makeRow = () => {
   ['','','']
 }
 
-const makeRow = () => { ['', '', ''] } // half, also missing return
+// half, also missing return
+const makeRow = () => { ['', '', ''] }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // makeBoard - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#79
 
-const makeBoard = () => { // correct
+// correct
+const makeBoard = () => {
   return [makeRow(), makeRow(), makeRow()]
 };
 
-const makeBoard = () => { // correct
+// correct
+const makeBoard = () => {
   return [makeRow(), makeRow(), makeRow()]
 }
 
-const makeBoard = () => { // correct
+// correct
+const makeBoard = () => {
   return [
     makeRow(), makeRow(), makeRow(),
   ]
 }
 
-const makeBoard = () => { // correct
+// correct
+const makeBoard = () => {
   return [makeRow(), makeRow(), makeRow()]
 }
 
-const makeBoard = () => { // correct
+// correct
+const makeBoard = () => {
   return [['', '', ''],['', '', ''],['', '', '']]
 }
 
-const makeBoard = () => { // correct
+// correct
+const makeBoard = () => {
   return [
     makeRow(),
     makeRow(),
@@ -1664,23 +1979,27 @@ const makeBoard = () => { // correct
     ]
 }
 
-const makeBoard = () => { // half, missing return
+// half, missing return
+const makeBoard = () => {
   [['', '', '']
   ['', '', '']
   ['', '', '']];
 }
 
-const makeBoard = () => { // zero, not an array, not calling makeRow
+// zero, not an array, not calling makeRow
+const makeBoard = () => {
   makeRow,
   makeRow,
   makeRow;
 }
 
-const makeBoard=()=>{ // zero, not an array, not calling makeRow
+// zero, not an array, not calling makeRow
+const makeBoard=()=>{
   return (makeRow + makeRow + makeRow)
 }
 
-const makeBoard = () => { // zero, not an array, not calling makeRow
+// zero, not an array, not calling makeRow
+const makeBoard = () => {
   makerow,
   makerow,
   makerow;
@@ -1689,35 +2008,43 @@ const makeBoard = () => { // zero, not an array, not calling makeRow
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // allTheSame - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#80
 
-const allTheSame = (a) => { // correct
+// correct
+const allTheSame = (a) => {
   return a[0] === a[1] && a[1] === a[2]
 };
 
-const allTheSame = (ary) => (ary[0] === ary[1] && ary[0] === ary[2]); // correct
+// correct
+const allTheSame = (ary) => (ary[0] === ary[1] && ary[0] === ary[2]);
 
-const allTheSame = (array) => { // correct
+// correct
+const allTheSame = (array) => {
   return array[0] === array[1] && array[0] === array[2]
 }
 
-const allTheSame = (arrayOfElements) => { // correct
+// correct
+const allTheSame = (arrayOfElements) => {
   return arrayOfElements[0] === arrayOfElements[1] && arrayOfElements[0] === arrayOfElements[2]
 }
 
-const allTheSame = (array) => { // correct
+// correct
+const allTheSame = (array) => {
   return array[0] === array[1] && array[1] === array[2]
 }
 
-const allTheSame = (array) => { // correct
+// correct
+const allTheSame = (array) => {
   return array[0] === array[1] && array[1] === array[2]
 }
 
-const allTheSame = (array) => { // correct, but the formatting is off
+// correct, but the formatting is off
+const allTheSame = (array) => {
   if (array[0] === array[1] && array[1] === array[2]) { return true
   }
 else return false
 }
 
-const allTheSame = (array) => { // correct, this is nice in that it works for arrays of any length
+// correct, this is nice in that it works for arrays of any length
+const allTheSame = (array) => {
   for (let i = 0; i < array.length; i++) {
     if (array[0] !== array[i]) {
       return false
@@ -1726,23 +2053,28 @@ const allTheSame = (array) => { // correct, this is nice in that it works for ar
   return true
 }
 
-const allTheSame = (xs) => { // correct, same as previous
+// correct, same as previous
+const allTheSame = (xs) => {
   for (let i = 1; i < xs.length; i++) {
     if (xs[0] !== xs[i]) return false;
   }
   return true;
 };
 
-const allTheSame = ([a, b, c]) => (a === b) && (a === c) // correct, this is quite stylish but only works because of an advanced feature we haven't discussed but
+// correct, this is quite stylish but only works because of an advanced feature
+// we haven't discussed but
+const allTheSame = ([a, b, c]) => (a === b) && (a === c)
 
-const allTheSame = (element1, element2, element3) => { // zero, wrong number of arguments
+// zero, wrong number of arguments
+const allTheSame = (element1, element2, element3) => {
   return element1 === element2 && element2 === element3
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // extractColumn - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#81
 
-const extractColumn = (board, c) => { // correct
+// correct
+const extractColumn = (board, c) => {
   let col = [];
   for (let r = 0; r < board.length; r++) {
     col.push(board[r][c]);
@@ -1750,7 +2082,8 @@ const extractColumn = (board, c) => { // correct
   return col;
 };
 
-const extractColumn = (board, collumn) => { // correct
+// correct
+const extractColumn = (board, collumn) => {
   let extraction = []
   for (let i = 0; i < 3; i++) {
     extraction.push(board[i][collumn])
@@ -1758,7 +2091,8 @@ const extractColumn = (board, collumn) => { // correct
   return extraction
 };
 
-const extractColumn = (array, index) => { // correct
+// correct
+const extractColumn = (array, index) => {
   let newArr = []
   for (let i = 0; i < array.length; i++){
     newArr.push(array[i][index])
@@ -1766,7 +2100,8 @@ const extractColumn = (array, index) => { // correct
   return newArr
 }
 
-const extractColumn = (ary, i) => { // correct
+// correct
+const extractColumn = (ary, i) => {
   let ary2 = ['', '', '']
   ary2[0] = ary[0] [i]
   ary2[1] = ary[1] [i]
@@ -1774,7 +2109,8 @@ const extractColumn = (ary, i) => { // correct
   return ary;
 }
 
-const extractColumn = (board, index) => { // correct
+// correct
+const extractColumn = (board, index) => {
   let extract = []
   for (let i = 0; i < 3; i++) {
     extract.push(board[i][index])
@@ -1782,11 +2118,13 @@ const extractColumn = (board, index) => { // correct
   return extract
 }
 
-const extractColumn = (board, index) => { // correct
+// correct
+const extractColumn = (board, index) => {
   return [board[0][index], board[1][index], board[2][index]]
 }
 
-const extractColumn = (board,column) => { // half, variable names got mixed up.
+// half, variable names got mixed up.
+const extractColumn = (board,column) => {
   let column = []{
   }
   for(let i =0 ; i < board.length; i ++){
@@ -1795,7 +2133,8 @@ const extractColumn = (board,column) => { // half, variable names got mixed up.
   return col;
 }
 
-const extractColumn = (board, index) => { // half, syntax around push got mangled
+// half, syntax around push got mangled
+const extractColumn = (board, index) => {
   let newBoard = []
   for (let i = 0; i < board.length; i++) {
     newBoard.push[i][index]
@@ -1806,7 +2145,8 @@ const extractColumn = (board, index) => { // half, syntax around push got mangle
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // fillTimesTable - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#82
 
-const fillTimesTable = (array) => { // correct
+// correct
+const fillTimesTable = (array) => {
   for (let x = 0; x < array.length; x++) {
     for (let y = 0; y < array[x].length; y++) {
       array[x][y] = (x + 1) * (y + 1)
@@ -1815,7 +2155,9 @@ const fillTimesTable = (array) => { // correct
   return array
 }
 
-const fillTimesTable = (array) => { // zero, this creates a new array rather than filling in the given array and calls push with too many arguments.
+// zero, this creates a new array rather than filling in the given array and
+// calls push with too many arguments.
+const fillTimesTable = (array) => {
   let table = []
   for (let i = 0; i < array.length; i++) {
     table.push((i + 1), (i + 1) * 2, (i + 1) * 3)
@@ -1823,7 +2165,8 @@ const fillTimesTable = (array) => { // zero, this creates a new array rather tha
   return table
 };
 
-const fillTimesTable = (array) => { // zero, incomplete plus shouldn't be using push.
+// zero, incomplete plus shouldn't be using push.
+const fillTimesTable = (array) => {
   for (let i = 0; i < array.length; i++) {
     for (let j = 0; j < i; j++) {
       array.push()
@@ -1835,7 +2178,8 @@ const fillTimesTable = (array) => { // zero, incomplete plus shouldn't be using 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // sums - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#83
 
-const sums = (n) => { // correct
+// correct
+const sums = (n) => {
   let sum = 0
   let summy = []
   for (let i = 0; i < n+1; i++) {
@@ -1844,7 +2188,8 @@ const sums = (n) => { // correct
   return summy
 };
 
-const sums = (n) => { // correct
+// correct
+const sums = (n) => {
   let array = []
   for (let i = 0; i < n + 1; i++){
     if (i === 0){
@@ -1857,7 +2202,8 @@ const sums = (n) => { // correct
   return array
 }
 
-const sums = (number) => { // half, pushes an extra 0 at the beginning.
+// half, pushes an extra 0 at the beginning.
+const sums = (number) => {
   let array = [0]
   for (let x = 0; x < number; x++) {
     array.push(x + array[x])
@@ -1868,7 +2214,8 @@ const sums = (number) => { // half, pushes an extra 0 at the beginning.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // rule110 - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#84
 
-const rule110 = (array) => { // half, for being the only one to attempt it. this is a *hard* problem.
+// half, for being the only one to attempt it. this is a *hard* problem.
+const rule110 = (array) => {
   let newArray = []
   for (let i=0; i < array.length; i++) {
     if (array[i-1, i ,i+1] = 0) {
@@ -1882,57 +2229,70 @@ const rule110 = (array) => { // half, for being the only one to attempt it. this
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // isSamePoint - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#85
 
-const isSamePoint = (point1, point2) => { // correct
+// correct
+const isSamePoint = (point1, point2) => {
   return (point1.x === point2.x) && (point1.y === point2.y)
 };
 
-const isSamePoint = (obj1, obj2) => obj1.x === obj2.x && obj1.y === obj2.y; // correct
+// correct
+const isSamePoint = (obj1, obj2) => obj1.x === obj2.x && obj1.y === obj2.y;
 
-const isSamePoint = (p1,p2) => { // correct
+// correct
+const isSamePoint = (p1,p2) => {
   return p1.x === p2.x && p1.y === p2.y
 }
 
-const isSamePoint = (p1, p2) => { // correct
+// correct
+const isSamePoint = (p1, p2) => {
   if (p1.x === p2.x && p1.y === p2.y) { return true
   }
   else return false
 }
 
-const isSamePoint = (p1, p2) => { // correct
+// correct
+const isSamePoint = (p1, p2) => {
   return (p1.x === p2.x) && (p1.y === p2.y)
 }
 
-const isSamePoint = (point1,point2) => { // half, needs === not =
+// half, needs === not =
+const isSamePoint = (point1,point2) => {
   return (point1.x = point2.x) && (point1.y = point2.y)
 }
 
-const isSamePoint = (p1, p2) => { // half, needs === not =
+// half, needs === not =
+const isSamePoint = (p1, p2) => {
   return (p1.x = p2.x) && (p1.y = p2.y)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // area - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#86
 
-const area = (rect) => { // correct
+// correct
+const area = (rect) => {
   return rect.width * rect.height
 };
 
-const area = (obj) => obj.width * obj.height; // correct
+// correct
+const area = (obj) => obj.width * obj.height;
 
-const area = (rect) => { // correct
+// correct
+const area = (rect) => {
   return rect.width * rect.height
 }
 
-const area = (r) => { // correct
+// correct
+const area = (r) => {
   return r.width * r.height
 }
 
-const area = (w, h) => w * h // zero, would be correct if arguments were numbers not a single object as specified
+// zero, would be correct if arguments were numbers not a single object as specified
+const area = (w, h) => w * h
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // totalWithTip - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#87
 
-const totalWithTip = (subtotal, tip) => { // correct
+// correct
+const totalWithTip = (subtotal, tip) => {
   let totals = {}
   totals.subtotal = subtotal.subtotal
   totals.tip = subtotal.subtotal*tip
@@ -1940,21 +2300,25 @@ const totalWithTip = (subtotal, tip) => { // correct
   return totals
 };
 
-const totalWithTip = (receet, tip) => { // correct
+// correct
+const totalWithTip = (receet, tip) => {
   return {subtotal: receet.subtotal, tip: receet.subtotal * tip, total: receet.subtotal + receet.subtotal * tip}
 }
 
-const totalWithTip = (object, number) => { // correct
+// correct
+const totalWithTip = (object, number) => {
   return {subtotal: object.subtotal, tip: object.subtotal*number, total: object.subtotal + object.subtotal*number}
 }
 
-const totalWithTip = (o, n) => { // correct
+// correct
+const totalWithTip = (o, n) => {
   let t = o.subtotal * n
   let all = o.subtotal + tip
   return {subtotal: o.subtotal, tip: t, subtotal: all}
 }
 
-const totalWithTip = (subtotal, percentageTip) => { // half, first argument is an object plus totalExcludingTip is never defined
+// half, first argument is an object plus totalExcludingTip is never defined
+const totalWithTip = (subtotal, percentageTip) => {
   let tip = subtotal * percentageTip
   let total = tip + subtotal
   return { subtotal: totalExcludingTip, tip: tipValue, total: totalValue }
@@ -1963,21 +2327,24 @@ const totalWithTip = (subtotal, percentageTip) => { // half, first argument is a
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // higherPaid - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#88
 
-const higherPaid = (employee1, employee2) => { // correct
+// correct
+const higherPaid = (employee1, employee2) => {
   if (employee1.salary > employee2.salary) {
     return employee1
   }
   return employee2
 };
 
-const higherPaid = (e1, e2) => { // correct
+// correct
+const higherPaid = (e1, e2) => {
   if (e1.salary < e2.salary) {
     return e2
   }
   else return e1
 }
 
-const higherPaid = (e1, e2) => { // correct
+// correct
+const higherPaid = (e1, e2) => {
   if (e1.salary > e2.salary) {
     return e1
   } else {
@@ -1985,7 +2352,8 @@ const higherPaid = (e1, e2) => { // correct
   }
 }
 
-const higherPaid = (employee1, employee2) => { // correct
+// correct
+const higherPaid = (employee1, employee2) => {
   if (employee1.salary > employee2.salary) {
     return employee1
   }
@@ -1994,33 +2362,38 @@ const higherPaid = (employee1, employee2) => { // correct
   }
 }
 
-const higherPaid = (employee1, employee2) => { // correct
+// correct
+const higherPaid = (employee1, employee2) => {
   if (employee1.salary > employee2.salary) {
     return employee1
   } else {return employee2}
 }
 
-const higherPaid = (e1, e2) => { // correct
+// correct
+const higherPaid = (e1, e2) => {
   if (e1.salary > e2.salary) { return e1
   }
   else return e2
 }
 
-const higherPaid = (x1,x2) => { // correct
+// correct
+const higherPaid = (x1,x2) => {
   if (x1.salary > x2.salary){
     return x1;
   } else if (x2.salary > x1.salary){
     return x2;
 } }
 
-const higherPaid=(salery1,salery2)=>{ // zero, arguments are objects not numbers
+// zero, arguments are objects not numbers
+const higherPaid=(salery1,salery2)=>{
    if(salery1 > salery2)
    return salery1
    else
    return salery2
 }
 
-const higherPaid = (salary1, salary2) => { // zero, syntax is very muddled.
+// zero, syntax is very muddled.
+const higherPaid = (salary1, salary2) => {
   if ([salary1] > [salary2]) {
     return [salary1]
   }
@@ -2032,42 +2405,51 @@ const higherPaid = (salary1, salary2) => { // zero, syntax is very muddled.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // isWinner - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#89
 
-const isWinner = (player) => { // correct
+// correct
+const isWinner = (player) => {
   return player.score > 100
 }
 
-const isWinner = (player) => { // correct
+// correct
+const isWinner = (player) => {
   return player.score > 100
 }
 
-const isWinner = (scores) => { // correct
+// correct
+const isWinner = (scores) => {
   return scores.score > 100
 };
 
-const isWinner = (o) => { // correct
+// correct
+const isWinner = (o) => {
   return o.score > 100
 }
 
-const isWinner = (object) => { // correct
+// correct
+const isWinner = (object) => {
   return object.score > 100
 }
 
-const isWinner = (obj) => { // correct, but formatting is wonky
+// correct, but formatting is wonky
+const isWinner = (obj) => {
   if (obj.score > 100) { return true
   }
   else return false
 }
 
-const isWinner = (obj) => obj.score > 100  // correct
+// correct
+const isWinner = (obj) => obj.score > 100
 
-const isWinner=(score)=>{ // half, logic is right but argument is an object not a number
+// half, logic is right but argument is an object not a number
+const isWinner=(score)=>{
   if (score > 100)
   return true
   else
   return false
 }
 
-const isWinner = (score) => { // half, same as previous
+// half, same as previous
+const isWinner = (score) => {
   if (score > 100) {
     return true
   }
@@ -2077,7 +2459,8 @@ const isWinner = (score) => { // half, same as previous
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // updateWins - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#90
 
-const updateWins = (playerList) => { // half, this is closest, missing only a .length in x < playerList.length
+// half, this is closest, missing only a .length in x < playerList.length
+const updateWins = (playerList) => {
   for (let x = 0; x < playerList; x++) {
     if (isWinner(playerList[x])) {
       playerList[x].wins = playerList[x].wins + 1
@@ -2085,14 +2468,16 @@ const updateWins = (playerList) => { // half, this is closest, missing only a .l
   }
 }
 
-const updateWins = (scores) => { // half, logic is basically right but scores is an array, not a single object.
+// half, logic is basically right but scores is an array, not a single object.
+const updateWins = (scores) => {
   if (isWinner(scores.score)); {
     scores.wins=scores.wins++
   }
   return 'undefined'
 };
 
-const updateWins = (player) => { // half, similar to previous
+// half, similar to previous
+const updateWins = (player) => {
   if (player.score > 100) {
     player.wins++
   }
@@ -2102,7 +2487,8 @@ const updateWins = (player) => { // half, similar to previous
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // bigWinners - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#91
 
-const bigWinners = (players) => { // correct
+// correct
+const bigWinners = (players) => {
   let superiorWinners = []
   for (let i = 0; i < players.length; i++) {
     if (players.wins > 10) {
@@ -2115,39 +2501,47 @@ const bigWinners = (players) => { // correct
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // makeMove - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#92
 
-const makeMove = (mark, row, column) => { // correct
+// correct
+const makeMove = (mark, row, column) => {
   return { mark: mark, row: row, column: column };
 };
 
-const makeMove = (m, r, c) => { // correct
+// correct
+const makeMove = (m, r, c) => {
   return { m: m, r: r, c: c, };
 }
 
-const makeMove = (x , y , o) => { // correct
+// correct
+const makeMove = (x , y , o) => {
   let makeMove = {'mark' : x , 'row' : y , 'column' : o }
   return makeMove
 }
 
-const makeMove = (xorO, row, column) => { // correct, due to shorthand object notation for row and column
+// correct, due to shorthand object notation for row and column
+const makeMove = (xorO, row, column) => {
   return {mark: xorO, row, column}
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // placeMark - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#93
 
-const placeMark = (board, move) => { // correct
+// correct
+const placeMark = (board, move) => {
   board[move.row][move.column] = move.mark
 }
 
-const placeMark = (board, move) => { // correct
+// correct
+const placeMark = (board, move) => {
   board[move.row][move.column] = move.mark;
 };
 
-const placeMark = (board, move ) => { // half, basically right except extra comma
+// half, basically right except extra comma
+const placeMark = (board, move ) => {
   return board [move.row] , [move. coloumn] = move.mark;
 }
 
-const placeMark = (array, moves) => { // zero
+// zero
+const placeMark = (array, moves) => {
   for (let i = 0; i < array.length; i++) {
     placeMark(array, moves[i])
   }
@@ -2156,18 +2550,21 @@ const placeMark = (array, moves) => { // zero
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // recordMove - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#94
 
-const recordMove = (array, move) => { // correct
+// correct
+const recordMove = (array, move) => {
   array.push(move)
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // rowForMove - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#95
 
-const rowForMove = (array, n) => { // correct
+// correct
+const rowForMove = (array, n) => {
   return array[n].row
 }
 
-const rowForMove = (moveobjects, index) => { // correct
+// correct
+const rowForMove = (moveobjects, index) => {
   return moves[index].row
 }
 
