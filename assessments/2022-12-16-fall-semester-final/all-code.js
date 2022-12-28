@@ -1,3 +1,16 @@
+/*
+ * Rather than comment on every PR individually, I've collected all the answers
+ * for all the questions from the final with comments about how I scored them.
+ * Every question was either 'correct', (one point), 'half', (half a point) or
+ * 'zero' (no points). For many of the 'half' and 'zero' answers I've commented
+ * on why they were not fully correct and for some of the 'correct' answers I
+ * pointed out small mistakes that made them technically not 100% correct but
+ * which I let slide, usually things like obvious typos. (There were some
+ * answers to some questions that were so incomplete I didn't score them at all,
+ * treating them as not an attempt as that would do less damage to your grade on
+ * that standard. I did not include those answers partial here.)
+ */
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // totalEggs - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#1
 
@@ -56,19 +69,6 @@ const chocolatesperperson = (numberofchocolate, numberofpeople) => { // half, ne
 const chocolatesPerPerson = (numC, numP) => { // half, needs Math.floor
   return numC / numP;
 };
-
-/*
- * Rather than comment on every PR individually, I've collected all the answers
- * for all the questions from the final with comments about how I scored them.
- * Every question was either 'correct', (one point), 'half', (half a point) or
- * 'zero' (no points). For many of the 'half' and 'zero' answers I've commented
- * on why they were not fully correct and for some of the 'correct' answers I
- * pointed out small mistakes that made them technically not 100% correct but
- * which I let slide, usually things like obvious typos. (There were some
- * answers to some questions that were so incomplete I didn't score them at all,
- * treating them as not an attempt as that would do less damage to your grade on
- * that standard. I did not include those answers partial here.)
- */
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // extraChocolates - https://intro.gigamonkeys.com/assessments/2022-12-16-fall-semester-final/#3
